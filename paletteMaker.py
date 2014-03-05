@@ -21,4 +21,4 @@ def makeGradient(freq1, freq2, freq3,
 
             f.write('0x{},'.format(rgb2Color(red, green, blue)))
 
-makeGradient(.04,.04,.04,0,2,4,16,15,150)
+makeGradient(.04,.04,.04,0,0,0,16,15,150)
