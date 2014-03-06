@@ -56,9 +56,9 @@ void shiftPalette() {
 	unsigned short color1 = PALETTE[1];
 
 	int i;
-	for (i=1; i<150; i++) {
+	for (i=1; i<256; i++) {
 		PALETTE[i] = PALETTE[i+1];
 	}
-	PALETTE[150] = color1;
+	PALETTE[255] = color1;
 
 }
