@@ -44,7 +44,6 @@ int main()
 		}
 
 		shiftPalette();
-		
 		waitForVblank();
 	}
 
@@ -55,10 +54,12 @@ int main()
 void shiftPalette() {
 	unsigned short color1 = PALETTE[1];
 
+    //DMANow(3, &PALETTE[2], &PALETTE[1], 255);
 	int i;
 	for (i=1; i<256; i++) {
 		PALETTE[i] = PALETTE[i+1];
 	}
-	PALETTE[255] = color1;
+
+    PALETTE[255] = color1;
 
 }
